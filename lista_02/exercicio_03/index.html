@@ -1,23 +1,58 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-	<head>
-		<meta charset="UTF-8">
-		<title>QUESTÃO 03 - LISTA 02 - LÓGICA DE PROGRAMAÇÃO - SENAI</title>
-	</head>
-	<body>
-		<p><a href="../../">< Voltar</a></p>
-        <table>
-            <tr>
-                <tr id="nome"></tr>
-                <tr id="email"></tr>
-            </tr>
-        </table>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exibir Usuários</title>
+<style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+    table, th, td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+    button {
+        padding: 5px 10px;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
 
-		<form id="formulario">
-			<input id="nome" placeholder="Informe seu nome" />
-			<input id="email" placeholder="Informe seu email" />
-			<button type="submit" id="botao">Clique aqui</button>
-		</form>
-	</body>
-	<script src="index.js"></script>
+<h2>Formulário para Exibir Usuários</h2>
+
+<form id="userForm">
+    <label for="userName">Nome:</label><br>
+    <input type="text" id="userName" name="userName" required><br><br>
+    
+    <label for="userEmail">Email:</label><br>
+    <input type="email" id="userEmail" name="userEmail" required><br><br>
+    
+    <button type="button" onclick="displayUser()">Enviar</button>
+</form>
+
+<h2>Lista de Usuários</h2>
+
+<table id="userTable">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody id="userTableBody">
+        <!-- As linhas da tabela serão adicionadas dinamicamente aqui -->
+    </tbody>
+</table>
+
+<script src="script.js"></script>
+
+</body>
 </html>
