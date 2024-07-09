@@ -1,0 +1,16 @@
+.caixa {
+    background-color: #808080; 
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#div1 {
+    background-color: #FF0000;
+
+#div2 {
+    background-color: #0000FF; 
+}
+
+#div3 {
+    background-color: #00FF00;
+}
